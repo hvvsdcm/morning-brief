@@ -1,0 +1,19 @@
+{
+  "name": "morning-brief",
+  "version": "1.0.0",
+  "private": true,
+  "description": "매일 아침 10분 분량의 신문형 뉴스 브리핑을 생성해 GitHub Pages로 발행한다.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "daily": "node scripts/daily.mjs",
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test": "node --test \"test/**/*.test.mjs\""
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.11.1"
+  }
+}
